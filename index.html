@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EstiloLaboratorioVirtual.css" type="text/css">
+    <link rel="shortcut icon" href="atomo.png" type="image/png">
+    <title>LaboratorioVirtual</title>
+</head>
+<body>
+    <header id="Encabezado">
+        <h1>Laboratorio Elementos Químicos</h1>
+        <nav id="Nav-Encabezado">
+            <ul>
+                <li><button class="botonNav" onclick="ordenarTablaP_Contenidos()">Orden: Horizontal</button></li>
+                <li><button class="botonNav" onclick="cambiarEscalaTabla()">Ajustar tabla: Automático</button></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="TablaPeriodica_Contenedor" class="distribucionHorizontal">
+        <div id="EspacioTablaPeriodica">
+            <div id="TablaPeriodica">
+                <div class="fila">
+                    <div class="cuadrosCeldas celdaElemento" id="celdaH"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaHe"></div>
+                </div>
+                <div class="fila">
+                    <div class="cuadrosCeldas celdaElemento" id="celdaLi"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaBe"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaB"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaC"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaN"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaO"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaF"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaNe"></div>
+                </div>
+                <div class="fila">
+                    <div class="cuadrosCeldas celdaElemento" id="celdaNa"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaMg"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaAl"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaSi"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaP"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaS"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaCl"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaAr"></div>
+                </div>
+                <div class="fila">
+                    <div class="cuadrosCeldas celdaElemento" id="celdaK"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaCa"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaSc"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaTi"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaV"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaCr"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaMn"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaFe"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaCo"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaNi"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaCu"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaZn"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaGa"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaGe"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaAs"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaSe"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaBr"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaKr"></div>
+                </div>
+                <div class="fila">
+                    <div class="cuadrosCeldas celdaElemento" id="celdaRb"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaSr"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaY"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaZr"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaNb"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaMo"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaTc"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaRu"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaRh"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaPd"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaAg"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaCd"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaIn"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaSn"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaSb"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaTe"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaI"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaXe"></div>
+                </div>
+                <div class="fila">
+                    <div class="cuadrosCeldas celdaElemento" id="celdaCs"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaBa"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaLu"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaHf"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaTa"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaW"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaRe"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaOs"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaIr"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaPt"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaAu"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaHg"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaTl"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaPb"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaBi"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaPo"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaAt"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaRn"></div>
+                </div>
+                <div class="fila">
+                    <div class="cuadrosCeldas celdaElemento" id="celdaFr"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaRa"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaLr"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaRf"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaDb"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaSg"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaBh"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaHs"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaMt"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaDs"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaRg"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaCn"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaNh"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaFl"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaMc"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaLv"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaTs"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaOg"></div>
+                </div>
+                <div class="fila"></div>
+                <div class="fila">
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaLa"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaCe"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaPr"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaNd"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaPm"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaSm"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaEu"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaGd"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaTb"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaDy"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaHo"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaEr"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaTm"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaYb"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                </div>
+                <div class="fila">
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaAc"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaTh"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaPa"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaU"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaNp"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaPu"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaAm"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaCm"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaBk"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaCf"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaEs"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaFm"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaMd"></div>
+                    <div class="cuadrosCeldas celdaElemento" id="celdaNo"></div>
+                    <div class="cuadrosCeldas celdaVacia"></div>
+                </div>
+            </div>
+        </div>
+        <div id="ContenedorContenidos">
+            <div id="Guia" class="contenido">
+                <div class="columnaGuia">
+                    <button id="BotonCambiaColorTP" onclick="cambiarColorTP()"></button>
+                    <div id="GuiaReferencia">
+                        <div id="GuiaElementoColor">
+                            <p>Color del elemento</p>
+                        </div>
+                        <ul id="Categoria">
+                            <li>Alcalinos</li>
+                            <li>Alcalinotérreos</li>
+                            <li>Latánidos</li>
+                            <li>Actínados</li>
+                            <li>Metales de transición</li>
+                            <li>Otros Metales</li>
+                            <li>Metaloides</li>
+                            <li>No metales</li>
+                            <li>Halógenos</li>
+                            <li>Gases nobles</li>
+                        </ul>
+                        <div id="GuiaMasaAtomicaColor">
+                            <p>Menor / Mayor</p>
+                        </div>
+                        <div id="GuiaElectronegatividadColor">
+                            <p>Menor / Mayor</p>
+                        </div>
+                        <div id="GuiaMetalColor">
+                            <p class="metal">Metal</p>
+                            <p class="noMetal">No metal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="columnaGuia">
+                    <h3>Infromación principal</h3>
+                    <form action="">
+                        <input type="radio" name="infoPrincipal" value="0">Protones/Num atómico<br />
+                        <input type="radio" name="infoPrincipal" value="1">Electrones<br />
+                        <input type="radio" name="infoPrincipal" value="2">Neutrones<br />
+                        <input type="radio" name="infoPrincipal" value="3">Masa atómica<br />
+                        <input type="radio" name="infoPrincipal" value="4">Electronegatividad<br />
+                        <input type="radio" name="infoPrincipal" value="5">Metal<br />
+                    </form>
+                    <div>
+                        <h3>Buscador</h3>
+                        <input type="text" placeholder="simbolo/num/nombre" id="BuscadorElementos" onkeypress="inputBuscadorElementos()">
+                    </div>
+                </div>
+            </div>
+            <div id="informacion" class="contenido">
+                <p class="informacionDatos" id="informacionNombre">Simbolo - Nombre - Número Atómico</p>
+                <div class="informacionDatos">
+                    <p class="tipoDato">Protones: </p>
+                    <p class="dato"></p>
+                </div>
+                <div class="informacionDatos">
+                    <p class="tipoDato">Electrones: </p>
+                    <p class="dato"></p>
+                </div>
+                <div class="informacionDatos">
+                    <p class="tipoDato">Neutrones: </p>
+                    <p class="dato"></p>
+                </div>
+                <div class="informacionDatos">
+                    <p class="tipoDato">Masa atómica: </p>
+                    <p class="dato"></p>
+                </div>
+                <div class="informacionDatos">
+                    <p class="tipoDato">Categoría: </p>
+                    <p class="dato"></p>
+                </div>
+                <div class="informacionDatos">
+                    <p class="tipoDato">Metal: </p>
+                    <p class="dato"></p>
+                </div>
+                <div class="informacionDatos">
+                    <p class="tipoDato">Electronegatividad: </p>
+                    <p class="dato"></p>
+                </div>
+                <div class="informacionDatos">
+                    <p class="tipoDato">Descripción: </p>
+                    <p class="dato"></p>
+                </div>
+            </div>
+            <div id="Representacion" class="contenido">
+                <div id="RepresentacionContenedorOpciones">
+                    <button id="botonRotarOrbitas" onclick="botonRotarOrbitas(diagramaRepresentacion)">Detener</button>
+                    <button id="botonVisualizarOrbitas" onclick="BotonVisualizadorOrbitas()">Orb: Visibles</button>
+                    <input type="number" id="InputEscalaNucleo" placeholder="Nuc: 50" onkeypress="InputNuevaEscala('InputEscalaNucleo', 0)" onmouseover="ApareceReferenciaInput(0)" onmouseout="DesapareceReferenciaInput(0)" value="">
+                    <span class="cartelInputRepresentacion letreroInvisible">Cambia el tamaño del nucleo (Presiona "Enter" para aplicar los cambios)</span>
+                    <input type="number" id="InputEscalaElectrones" placeholder="Elec: 20" onkeypress="InputNuevaEscala('InputEscalaElectrones', 1)" onmouseover="ApareceReferenciaInput(1)" onmouseout="DesapareceReferenciaInput(1)" value="">
+                    <span class="cartelInputRepresentacion letreroInvisible">Cambia el tamaño de los electrones (Presiona "Enter" para aplicar los cambios)</span>
+                    <input type="number" id="InputDistanciaOrbitas" placeholder="Orb: 40" onkeypress="InputNuevaEscala('InputDistanciaOrbitas', 2)" onmouseover="ApareceReferenciaInput(2)" onmouseout="DesapareceReferenciaInput(2)" value="">
+                    <span class="cartelInputRepresentacion letreroInvisible">Cambia la distancia de las orbitas (Presiona "Enter" para aplicar los cambios)</span>
+                </div>
+                <div id="ZonaDiagramaRepresentacion">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr style="border-color: green; border-width: 1px; border-style: solid; margin: 10px; border-radius: 1px;" />
+    <br>
+    <div id="Simulaciones">
+        <h2>Simulacion</h2>
+        <div id="SimulacionPauling">
+            <div id="MenuPauling">
+                <h3>Enlaces</h3>
+                <div id="OpcionesPauling">
+                    <input type="text" class="inputAtomoPauling" placeholder="simbolo/num/nombre" onkeypress="BotonAplicarCambiosPauling(false); InformacionResultadosPauling(moleculaPauling, false)">
+                    <input type="text" class="inputAtomoPauling" placeholder="simbolo/num/nombre" onkeypress="BotonAplicarCambiosPauling(false); InformacionResultadosPauling(moleculaPauling, false)">
+                    <button id="AplicarCambiosPauling" onclick="BotonAplicarCambiosPauling(true); InformacionResultadosPauling(moleculaPauling, true)">Aplicar</button>
+                    <button id="BotonVerResultados" onclick="VisualizarResultadosMolecula()">Resultados: X</button>
+                </div>
+            </div>
+            <div>
+                <div id="ZonaExperimentoPauling">
+                    <div id="ContenedorMolecula"></div>
+                </div>
+                <div id="ResultadosPauling">
+                    <div class="infoMolecula">
+                        <p class="tipoDatoMolecula">Simbolo: </p>
+                        <p class="datoMolecula"></p>
+                    </div>
+                    <div class="infoMolecula">
+                        <p class="tipoDatoMolecula">Tipo de enlace: </p>
+                        <p class="datoMolecula"></p>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="ContenedorElementosQuimicos.js" type="text/javascript"></script>
+<script src="OtrasDeclaraciones.js" type="text/javascript"></script>
+<script src="FuncionamientoLaboratorio.js" type="text/javascript"></script>
+<script src="Funciones.js" type="text/javascript"></script>
+</html>
