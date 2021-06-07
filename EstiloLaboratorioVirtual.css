@@ -1,0 +1,462 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+input[type="text"], input[type="number"]{
+    border-style: solid;
+    border-color: green;
+}
+
+body{
+    background-color: black;
+    overflow-y: scroll;
+}
+/* Encabezado */
+@keyframes EntradaTrasladarDerecha{
+    0% {left: -100%;}
+    100% {left: 0%;}
+}
+
+#Encabezado{
+    background-color: green;
+    width: 100%;
+    position: relative;
+    border-radius: 0px 10px 10px 0px;
+    animation-name: EntradaTrasladarDerecha;
+    animation-duration: 1s;
+}
+
+#Encabezado h1{
+    font-size: 50px;
+    vertical-align: middle;
+    position: relative;
+    font-family: cursive;
+    color: white;
+    text-align: center;
+}
+
+#Nav-Encabezado ul{
+    display: flex;
+    padding: 2px;
+}
+
+#Nav-Encabezado ul li{
+    list-style: none;
+    margin: 2px;
+    width: 50%;
+}
+
+.botonNav{
+    color: white;
+    background-color: #1a1a1a;
+    border-style: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.botonNav:hover{
+    cursor: pointer;
+    filter: brightness(75%);
+    font-size: 30px;
+}
+
+.botonNav:active{
+    filter: brightness(50%);
+}
+
+/* TablaPeriodica_Contenedor */
+.distribucionHorizontal{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.distribucionVertical{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Tabla Periodica */
+#EspacioTablaPeriodica{
+    overflow: auto;
+}
+.cuadrosCeldas{
+    width: 25px;
+    height: 25px;
+    float: left;
+    border-radius: 20%;
+    background-color: #202020;
+}
+
+#TablaPeriodica{
+    background-color: #202020;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.celdaVacia{
+    background-color: transparent;
+}
+
+.celdaElemento p{
+    text-align: center;
+}
+
+.celdaElemento:hover{
+    z-index: 118;
+    cursor: pointer;
+    transform: scale(1.5);
+    border-style: solid;
+}
+
+.celdaElemento:active{
+    cursor: help;
+    transform: scale(2);
+    border-style: solid;
+    z-index: 118;
+}
+
+/*Contenedor*/
+#ContenedorContenidos{
+    width: 100%;
+    position: relative;
+    gap: 5px;
+    overflow: auto;
+}
+
+#ContenedorContenidos .contenido
+{
+    width: 100%;
+    height: 400px;
+}
+
+/*información*/
+#informacion{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: green;
+    overflow-y: auto;
+}
+
+#informacionNombre{
+    text-align: center;
+    font-size: 25px;
+}
+
+p.dato::first-letter{
+    text-transform: uppercase;
+}
+
+.informacionDatos p{
+    display: inline-block;
+}
+
+.tipoDato{
+    font-weight: bold;
+}
+/* Guia */
+#Guia{
+    background-color: #202020;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    word-wrap: break-word;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+#BotonCambiaColorTP{
+    background-color: green;
+    border-style: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+}
+
+#BotonCambiaColorTP:hover{
+    filter: brightness(75%);
+    cursor: pointer;
+}
+
+#BotonCambiaColorTP:active{
+    filter: brightness(50%);
+}
+
+#Guia h3{
+    color: green;
+}
+
+#Categoria li{ /* secciones */
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#GuiaElementoColor{
+    color: green;
+    font-weight: bold;
+}
+
+#GuiaMasaAtomicaColor{
+    width: 100%;
+    padding: 5px;
+    background: linear-gradient(left ,white, red, black);;
+    background: -webkit-linear-gradient(left ,white, red, black);
+    background: -moz-linear-gradient(left ,white, red, black);
+    background: -o-linear-gradient(left ,white, red, black);
+    background: -ms-linear-gradient(left ,white, red, black);
+    text-align: center;
+    border-radius: 5px;
+}
+
+#GuiaElectronegatividadColor{
+    width: 100%;
+    padding: 5px;
+    background: linear-gradient(left ,white, blue, black);;
+    background: -webkit-linear-gradient(left ,white, blue, black);
+    background: -moz-linear-gradient(left ,white, blue, black);
+    background: -o-linear-gradient(left ,white, blue, black);
+    background: -ms-linear-gradient(left ,white, blue, black);
+    text-align: center;
+    border-radius: 5px;
+}
+
+#GuiaMetalColor{
+    display: flex;
+}
+
+#GuiaMetalColor p{
+    width: 50%;
+    text-align: center;
+    color: #808080;
+    padding: 5px;
+}
+
+#GuiaMetalColor .metal{
+    background-color: black;
+    border-radius: 5px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+#GuiaMetalColor .noMetal{
+    background-color: white;
+    border-radius: 0px 5px 5px 0px;
+}
+
+input[type="button"]:hover{
+    cursor: pointer;
+}
+
+input[name="infoPrincipal"]:hover{
+    cursor: pointer;
+}
+
+#BuscadorElementos{
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+/* Representacion */
+#Representacion{
+    background-color: #202020;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+
+#RepresentacionContenedorOpciones{
+    z-index: 1000;
+    background-color: green;
+    display: flex;
+    padding: 2px;
+}
+
+#RepresentacionContenedorOpciones button{
+    font-size: 15px;
+    width: 20%;
+    height: 40px;
+    background-color: #202020;
+    border-style: none;
+    color: white;
+    border-radius: 10px;
+}
+
+#RepresentacionContenedorOpciones button:hover{
+    cursor: pointer;
+    filter: brightness(75%);
+}
+
+#RepresentacionContenedorOpciones button:active{
+    filter: brightness(50%);
+}
+
+#RepresentacionContenedorOpciones span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    top: 100%;
+    border-radius: 0px 0px 10px 10px;
+    left: 0%;
+    color: white;
+    padding-left: 5px;
+    text-align: center;
+}
+
+@keyframes DesvancerEntrada{
+    0%{filter: opacity(0%);}
+    100%{filter: opacity(100%);}
+}
+
+#RepresentacionContenedorOpciones span.letreroVisible{
+    visibility: visible;
+    filter: opacity(100%);
+    animation-name: DesvancerEntrada;
+    animation-duration: 1s;
+}
+
+#RepresentacionContenedorOpciones span.letreroInvisible{
+    filter: opacity(0%);
+    visibility: hidden;
+}
+
+#RepresentacionContenedorOpciones input{
+    font-size: 15px;
+    width: 20%;
+    height: 40px;
+    border-radius: 10px;
+}
+
+#ZonaDiagramaRepresentacion{
+    height: 356px;
+    width: 100%;
+    overflow: auto;
+}
+
+.nucleo{
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+}
+
+.orbita{
+    position: absolute;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+}
+
+.contenedorElectron{
+    position: absolute;
+}
+
+.electron{
+    background-color: yellow;
+    position: absolute;
+    border-radius: 50%;
+}
+
+#ContenedorRepresentacion{
+    overflow: hidden;
+}
+
+@media (max-width: 1200px)/* cuando aumente el numero de contenido le cambias */
+{
+    .distribucionHorizontal #ContenedorContenidos .contenido{
+        width: 400px;
+    }
+}
+/*Simulaciones*/
+
+#Simulaciones{
+    color: white;
+    text-align: center;
+    background-color: #202020;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#ZonaExperimentoPauling
+{
+    overflow: auto;
+    background-color: #202020;
+    border-radius: 0px 0px 20px 20px;
+    color: black;
+}
+#ContenedorMolecula{
+    overflow: hidden;
+    position: absolute;
+}
+
+#MenuPauling{
+    background-color: green;
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+}
+
+#OpcionesPauling{
+    display: flex;
+}
+
+#OpcionesPauling *{
+    width: 25%;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+#OpcionesPauling div{
+    font-size: 15px;
+}
+
+#OpcionesPauling button{
+    background-color: black;
+    border-style: none;
+    color: white;
+}
+
+#OpcionesPauling button:hover{
+    cursor: pointer;
+    filter: brightness(75%);
+}
+
+#OpcionesPauling button:active{
+    filter: brightness(50%);
+}
+
+#ZonaExperimentoPauling{
+    width: 100%;
+    height: 500px;
+}
+
+#ResultadosPauling{
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: green;
+    border-radius: 20px 0px 0px 20px;
+    visibility: hidden;
+    text-align: left;
+    padding: 5px;
+}
+
+#ResultadosPauling .infoMolecula p{
+    display: inline-block;
+}
+
+#ResultadosPauling .tipoDatoMolecula{
+    font-weight: bolder;
+}
